@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: Insurance-Premium-prediction
+Version: 0.0.1
+Author: shahid
+Author-email: shaikshahidvali2000@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn

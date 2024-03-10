@@ -1,0 +1,27 @@
+[ 2024-03-10 15:23:12,874 ] 29 root - INFO - Data Ingestion methods Starts
+[ 2024-03-10 15:23:12,874 ] 32 root - INFO - Dataset read as pandas Dataframe
+[ 2024-03-10 15:23:12,890 ] 36 root - INFO - Train test split
+[ 2024-03-10 15:23:12,905 ] 42 root - INFO - Ingestion of Data is completed
+[ 2024-03-10 15:23:12,921 ] 78 root - INFO - Read train and test data completed
+[ 2024-03-10 15:23:12,928 ] 79 root - INFO - Train Dataframe Head : 
+   age     sex   bmi  children smoker     region  expenses
+0   46  female  20.0         2     no  northwest   9193.84
+1   47  female  24.3         0     no  northeast   8534.67
+2   52  female  24.9         0     no  southeast  27117.99
+3   39  female  34.3         5     no  southeast   8596.83
+4   54  female  21.5         3     no  northwest  12475.35
+[ 2024-03-10 15:23:12,928 ] 80 root - INFO - Test Dataframe Head  : 
+   age     sex   bmi  children smoker     region  expenses
+0   45  female  25.2         2     no  northeast   9095.07
+1   36  female  30.0         0     no  northwest   5272.18
+2   64  female  26.9         0    yes  northwest  29330.98
+3   46    male  25.7         3     no  northwest   9301.89
+4   19    male  31.9         0    yes  northwest  33750.29
+[ 2024-03-10 15:23:12,928 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-03-10 15:23:12,928 ] 26 root - INFO - Data Transformation initiated
+[ 2024-03-10 15:23:12,928 ] 37 root - INFO - Pipeline Initiated
+[ 2024-03-10 15:23:12,943 ] 99 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-03-10 15:23:12,943 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2024-03-10 15:23:12,943 ] 31 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2024-03-10 15:23:13,311 ] 57 root - INFO - Model Report : {'LinearRegression': 0.7413393765020013, 'Lasso': 0.7413393305595368, 'Ridge': 0.7413386977603151, 'Elasticnet': 0.6569408273379636, 'decisiontree': 0.9983078115527046, 'randomforest': 0.8824273746236551, 'bagging': 0.9538591495140102, 'boosting': 0.9977322200379534}
+[ 2024-03-10 15:23:13,311 ] 70 root - INFO - Best Model Found , Model Name : decisiontree , R2 Score : 0.9983078115527046

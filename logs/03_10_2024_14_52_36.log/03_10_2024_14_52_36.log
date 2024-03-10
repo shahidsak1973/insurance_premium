@@ -1,0 +1,26 @@
+[ 2024-03-10 14:52:38,146 ] 29 root - INFO - Data Ingestion methods Starts
+[ 2024-03-10 14:52:38,162 ] 32 root - INFO - Dataset read as pandas Dataframe
+[ 2024-03-10 14:52:38,180 ] 36 root - INFO - Train test split
+[ 2024-03-10 14:52:38,180 ] 42 root - INFO - Ingestion of Data is completed
+[ 2024-03-10 14:52:38,196 ] 78 root - INFO - Read train and test data completed
+[ 2024-03-10 14:52:38,196 ] 79 root - INFO - Train Dataframe Head : 
+   age     sex   bmi  children smoker     region  expenses
+0   46  female  20.0         2     no  northwest   9193.84
+1   47  female  24.3         0     no  northeast   8534.67
+2   52  female  24.9         0     no  southeast  27117.99
+3   39  female  34.3         5     no  southeast   8596.83
+4   54  female  21.5         3     no  northwest  12475.35
+[ 2024-03-10 14:52:38,212 ] 80 root - INFO - Test Dataframe Head  : 
+   age     sex   bmi  children smoker     region  expenses
+0   45  female  25.2         2     no  northeast   9095.07
+1   36  female  30.0         0     no  northwest   5272.18
+2   64  female  26.9         0    yes  northwest  29330.98
+3   46    male  25.7         3     no  northwest   9301.89
+4   19    male  31.9         0    yes  northwest  33750.29
+[ 2024-03-10 14:52:38,212 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-03-10 14:52:38,212 ] 26 root - INFO - Data Transformation initiated
+[ 2024-03-10 14:52:38,212 ] 37 root - INFO - Pipeline Initiated
+[ 2024-03-10 14:52:38,229 ] 99 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-03-10 14:52:38,229 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2024-03-10 14:52:38,229 ] 31 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2024-03-10 14:52:38,229 ] 79 root - INFO - Exception occured at Model Training

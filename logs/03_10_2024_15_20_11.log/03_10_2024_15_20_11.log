@@ -1,0 +1,34 @@
+[ 2024-03-10 15:20:12,547 ] 29 root - INFO - Data Ingestion methods Starts
+[ 2024-03-10 15:20:12,563 ] 32 root - INFO - Dataset read as pandas Dataframe
+[ 2024-03-10 15:20:12,563 ] 36 root - INFO - Train test split
+[ 2024-03-10 15:20:12,582 ] 42 root - INFO - Ingestion of Data is completed
+[ 2024-03-10 15:20:12,597 ] 78 root - INFO - Read train and test data completed
+[ 2024-03-10 15:20:12,597 ] 79 root - INFO - Train Dataframe Head : 
+   age     sex   bmi  children smoker     region  expenses
+0   46  female  20.0         2     no  northwest   9193.84
+1   47  female  24.3         0     no  northeast   8534.67
+2   52  female  24.9         0     no  southeast  27117.99
+3   39  female  34.3         5     no  southeast   8596.83
+4   54  female  21.5         3     no  northwest  12475.35
+[ 2024-03-10 15:20:12,597 ] 80 root - INFO - Test Dataframe Head  : 
+   age     sex   bmi  children smoker     region  expenses
+0   45  female  25.2         2     no  northeast   9095.07
+1   36  female  30.0         0     no  northwest   5272.18
+2   64  female  26.9         0    yes  northwest  29330.98
+3   46    male  25.7         3     no  northwest   9301.89
+4   19    male  31.9         0    yes  northwest  33750.29
+[ 2024-03-10 15:20:12,597 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-03-10 15:20:12,597 ] 26 root - INFO - Data Transformation initiated
+[ 2024-03-10 15:20:12,597 ] 37 root - INFO - Pipeline Initiated
+[ 2024-03-10 15:20:12,613 ] 99 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-03-10 15:20:12,613 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2024-03-10 15:20:12,613 ] 31 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2024-03-10 15:20:16,633 ] 57 root - INFO - Model Report : {'LinearRegression': array([0.71739886, 0.806937  , 0.72617159, 0.66117039, 0.76749515,
+       0.71739886, 0.806937  , 0.72617159, 0.66117039, 0.76749515]), 'Lasso': array([0.71741843, 0.80692267, 0.72619744, 0.6611788 , 0.76749127,
+       0.71741843, 0.80692267, 0.72619744, 0.6611788 , 0.76749127]), 'Ridge': array([0.71740119, 0.80690865, 0.72619221, 0.66122997, 0.76745934,
+       0.71740119, 0.80690865, 0.72619221, 0.66122997, 0.76745934]), 'Elasticnet': array([0.63863757, 0.69986573, 0.6509945 , 0.61017376, 0.66504223,
+       0.63863757, 0.69986573, 0.6509945 , 0.61017376, 0.66504223]), 'decisiontree': array([0.99231427, 1.        , 0.99749602, 0.99441171, 1.        ,
+       0.99231427, 1.        , 0.99749602, 0.99441171, 1.        ]), 'randomforest': array([0.85253149, 0.93139665, 0.8423454 , 0.82756825, 0.87914569,
+       0.8535463 , 0.93076794, 0.84353872, 0.82840517, 0.87960293]), 'bagging': array([0.94199567, 0.96897022, 0.94988798, 0.94614674, 0.96686832,
+       0.94689711, 0.96330648, 0.94369697, 0.94470094, 0.95068892])}
+[ 2024-03-10 15:20:16,633 ] 79 root - INFO - Exception occured at Model Training
