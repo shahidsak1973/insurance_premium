@@ -1,0 +1,27 @@
+[ 2024-03-10 20:06:18,810 ] 29 root - INFO - Data Ingestion methods Starts
+[ 2024-03-10 20:06:18,816 ] 32 root - INFO - Dataset read as pandas Dataframe
+[ 2024-03-10 20:06:18,832 ] 36 root - INFO - Train test split
+[ 2024-03-10 20:06:18,840 ] 42 root - INFO - Ingestion of Data is completed
+[ 2024-03-10 20:06:18,873 ] 78 root - INFO - Read train and test data completed
+[ 2024-03-10 20:06:18,882 ] 79 root - INFO - Train Dataframe Head : 
+   age     sex   bmi  children smoker     region  expenses
+0   46  female  20.0         2     no  northwest   9193.84
+1   47  female  24.3         0     no  northeast   8534.67
+2   52  female  24.9         0     no  southeast  27117.99
+3   39  female  34.3         5     no  southeast   8596.83
+4   54  female  21.5         3     no  northwest  12475.35
+[ 2024-03-10 20:06:18,887 ] 80 root - INFO - Test Dataframe Head  : 
+   age     sex   bmi  children smoker     region  expenses
+0   45  female  25.2         2     no  northeast   9095.07
+1   36  female  30.0         0     no  northwest   5272.18
+2   64  female  26.9         0    yes  northwest  29330.98
+3   46    male  25.7         3     no  northwest   9301.89
+4   19    male  31.9         0    yes  northwest  33750.29
+[ 2024-03-10 20:06:18,887 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-03-10 20:06:18,887 ] 26 root - INFO - Data Transformation initiated
+[ 2024-03-10 20:06:18,887 ] 37 root - INFO - Pipeline Initiated
+[ 2024-03-10 20:06:18,910 ] 99 root - INFO - Applying preprocessing object on training and testing datasets.
+[ 2024-03-10 20:06:18,911 ] 111 root - INFO - Preprocessor pickle file saved
+[ 2024-03-10 20:06:18,911 ] 31 root - INFO - Splitting Dependent and Independent variables from train and test data
+[ 2024-03-10 20:06:23,336 ] 57 root - INFO - Model Report : {'LinearRegression': 0.7393315747876688, 'Lasso': 0.7393377729184996, 'Ridge': 0.7393482042865446, 'Elasticnet': 0.6598114698874405, 'decisiontree': 0.6866887659278469, 'randomforest': 0.8551786452217123, 'bagging': 0.8145167798744722, 'boosting': 0.8022384583386499}
+[ 2024-03-10 20:06:23,337 ] 70 root - INFO - Best Model Found , Model Name : randomforest , cv-score : 0.8551786452217123
